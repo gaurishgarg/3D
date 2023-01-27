@@ -29,7 +29,7 @@
        <canvas id="unity-canvas" width=1080 height=1920 tabindex="-1" style="margin: auto auto; width: 1080px; height: 1920px; background: #231F20"></canvas>
        <div id="readyplayermeframe" allow="camera *; microphone *; clipboard-write" style="margin: auto auto; width: auto; height: auto">               
         <input type="button" value="Load Instructions" onClick="playwelcome()" />
-        <input type="button" value="Open Ready Player Me" onClick="displayIframe()" />
+        <input type="button" value="Start" onClick="displayIframe()" />
           <p id="avatarUrl">Avatar URL:</p>
       
           <iframe id="frame" class="frame" allow="autoplay; camera *; microphone *; clipboard-write"></iframe>
@@ -47,6 +47,7 @@
 
       };
       hidegame();     
+      hideframe();
       const subdomain = 'gaurishgarg'; // Replace with your custom subdomain
       const frame = document.getElementById('frame');
 
